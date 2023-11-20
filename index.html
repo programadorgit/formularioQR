@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario de Contacto</title>
+   	<link rel="stylesheet" href="style/estilos.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+	<script src = "https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+   
+</head>
+<body>
+    
+    <div class="container-form">
+        <div class="info-form">
+             <h2> Contactanos</h2>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Esse voluptate aperiam doloremque, pariatur, iusto eos laborum aliquam ratione dolore modi corporis dolorem eum earum id facere iure inventore quis fuga!</p>
+             <a href="#"><i class ="fa fa-phone">
+             </i> 809-000-0000</a>
+             <a href="#"> <i class="fa fa-envelope">
+             </i>email@hotmail.com</a>
+             <a href="#" > <i class="fa fa-map-marked">
+            </i>Santo Domingo, Republica Dominicana.</a>
+    </div>
+
+    <div class="contenedor">
+    <form id="form">
+            <label><input id="nombre" placeholder="Ingrese el nombre:" autocomplete="off" type="text" required/></label>
+            <label><input id="apellido" placeholder="Ingrese el apellido:" autocomplete="off" type="text" required/></label>
+            <label><input id="telefono" placeholder="Ingrese el numero de telefono:" autocomplete="off"  type="text" required/></label>
+            <label><input id="correo" placeholder="Ingrese el correo electronico:" autocomplete="off" type="text" required/></label>
+            <input id="enviar" value="Enviar" type="submit" />
+    </form>
+        <div id="div_qr" class="contenedorQR">
+            <img src="" alt="QR generador" />
+        </div>
+    </div>
+
+    <script src="js/programa.js"></script>
+    <script src="js/QrCode.min.js"></script>
+</body>
+
+</html>
